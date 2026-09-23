@@ -49,7 +49,7 @@ plan(prepared, params)                             # быстрый, перес�
 2. Если строк < 8: кандидат, если `qty > oneoff_small_mult (5) × Σ(прочие строки за 12 мес)` и `qty ≥ 10·med_q`.
 3. **Регулярность** (не разовый): кандидатоподобные строки (`qty ≥ 0.5·qty_candidate`) встречаются в ≥ `oneoff_recurrence_months` (4)
    из последних 12 месяцев → `REGULAR_LARGE_BUYER{count}`; при наличии `client_hash`: клиент покупал SKU в ≥3 разных месяцах → регулярный.
-4. Разовая строка: `cap = max(quantile(qty_non_candidates, 0.9), 3·med_q)`, `excess = qty − cap`.
+4. Для месяца с разовой строкой `baseline[m]` — медиана продаж SKU в нормальных месяцах того же календарного месяца (без строк-кандидатов); если таких месяцев нет, берётся медиана всех нормальных месяцев SKU. `replacement[m] = min(candidate_total[m], max(0, baseline[m] − regular_lines_total[m]))`, `excess_sum[m] = candidate_total[m] − replacement[m]`, где `candidate_total` — сумма строк-кандидатов, а `regular_lines_total` — сумма остальных строк месяца; если нормальных месяцев нет вообще, исключение не выполняется.
 5. **Вычитание из месячного ряда (D3)**:
    `tx_total[m] = Σ строк месяца`, `excess_sum[m] = Σ excess разовых`, `tx_regular[m] = tx_total[m] − excess_sum[m]`,
    `removed[m] = min(excess_sum[m], max(0, d[m] − tx_regular[m]))`, `d_clean[m] = d[m] − removed[m]`.
