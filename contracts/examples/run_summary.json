@@ -1,0 +1,28 @@
+{
+  "run_id": "3f9a1c07b2d4e5a1",
+  "dataset_id": "ds_20260922_01",
+  "as_of": "2026-09-22",
+  "engine_version": "1.0.0",
+  "created_at": "2026-09-23T10:15:00+05:00",
+  "params": { "review_days": { "SE": 14, "IEK": 14 }, "lead_time_days": { "SE-MAIN": 45, "IEK-RF": 38, "IEK-PP": 24, "IEK-UT": 12 } },
+  "totals": { "lines": 4, "lines_to_order": 3, "value_kzt": 5230400, "critical": 1, "high": 1, "excess_value_kzt": 812000 },
+  "suppliers": [
+    {
+      "supplier_id": "SE", "name": "Systeme Electric", "lines": 2, "lines_to_order": 2, "value_kzt": 5230400,
+      "critical": 0, "high": 1, "excess_value_kzt": 812000, "stock_estimated": false,
+      "channels": [
+        { "channel_id": "SE-MAIN", "supplier_id": "SE", "name": "Основной", "lead_time_days": 45, "lead_time_source": "default", "is_fast": false, "lines_to_order": 2, "value_kzt": 5230400 }
+      ]
+    },
+    {
+      "supplier_id": "IEK", "name": "ИЭК", "lines": 2, "lines_to_order": 1, "value_kzt": null,
+      "critical": 1, "high": 0, "excess_value_kzt": null, "stock_estimated": true,
+      "channels": [
+        { "channel_id": "IEK-PP", "supplier_id": "IEK", "name": "ПП", "lead_time_days": 24, "lead_time_source": "data", "is_fast": false, "lines_to_order": 1, "value_kzt": null },
+        { "channel_id": "IEK-UT", "supplier_id": "IEK", "name": "УТ", "lead_time_days": 12, "lead_time_source": "data", "is_fast": true, "lines_to_order": 0, "value_kzt": null },
+        { "channel_id": "IEK-RF", "supplier_id": "IEK", "name": "РФ", "lead_time_days": 38, "lead_time_source": "data", "is_fast": false, "lines_to_order": 0, "value_kzt": null }
+      ]
+    }
+  ],
+  "quality_warnings": 7
+}

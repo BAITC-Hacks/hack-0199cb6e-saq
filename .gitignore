@@ -1,5 +1,42 @@
+# --- данные партнёра и артефакты (никогда не коммитить) ---
+data/
+var/
+*.xlsx
+*.xls
+*.xlsm
+*.xlsb
+*.csv
+*.parquet
+*.db
+*.sqlite
+*.sqlite3
+*.log
+
+# --- секреты ---
 .env
+.env.*
+!.env.example
+
+# --- Python ---
 __pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+dist/
+build/
+*.egg-info/
+
+# --- Node / Next ---
 node_modules/
-data/raw/
-data/processed/
+web/.next/
+web/out/
+web/next-env.d.ts
+
+# --- ОС / IDE ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

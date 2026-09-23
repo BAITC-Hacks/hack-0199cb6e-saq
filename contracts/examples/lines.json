@@ -1,0 +1,70 @@
+{
+  "run_id": "3f9a1c07b2d4e5a1",
+  "total": 4,
+  "items": [
+    {
+      "sku_id": "030200192_", "supplier_id": "SE", "supplier_name": "Systeme Electric", "channel_id": "SE-MAIN",
+      "supplier_article": "IMT35100", "name": "Установочная коробка для твердых стен 65х45 IMT35100 Systeme Electric (200)",
+      "group": "IMT коробки", "abc": "A", "demand_class": "smooth", "lifecycle": "active",
+      "uom_sales": "шт", "uom_purchase": "шт", "purchase_factor": 1,
+      "stock_now": 61000, "stock_is_estimate": false, "inbound_qty": 0, "next_eta": null,
+      "forecast_month": 52000, "cover_months_now": 1.17,
+      "recommended_qty": 64000, "recommended_qty_purchase": 64000, "order_multiple": 200, "min_order_qty": 200,
+      "value_kzt": 4160000, "urgency": "high", "stockout_date": "2026-11-02", "order_by": "2026-09-22",
+      "reason_short": {
+        "ru": "Заказать 64 000 шт: спрос на 59 дн. — 103 200, страховой запас — 21 800, доступно — 61 000. Сезонный пик (×1,12).",
+        "kk": "64 000 дана тапсырыс беру ұсынылады: 59 күнге сұраныс — 103 200, сақтандыру қоры — 21 800, қолжетімді — 61 000. Маусымдық шың (×1,12)."
+      },
+      "reason_codes": ["BASE_DEMAND", "SEASON", "REGULAR_LARGE_BUYER", "SAFETY_STOCK", "STOCK_NOW", "ROUND_MULTIPLE", "URGENT"],
+      "flags": [], "channel_suggestion": null
+    },
+    {
+      "sku_id": "300200286_", "supplier_id": "SE", "supplier_name": "Systeme Electric", "channel_id": "SE-MAIN",
+      "supplier_article": "ATN000143", "name": "S398 Роз. с з/к 16А с/у б/рамки \"ATLAS\" белый ATN143 (20)",
+      "group": "ATLAS", "abc": "A", "demand_class": "erratic", "lifecycle": "active",
+      "uom_sales": "шт", "uom_purchase": "шт", "purchase_factor": 1,
+      "stock_now": 2400, "stock_is_estimate": false, "inbound_qty": 0, "next_eta": null,
+      "forecast_month": 3600, "cover_months_now": 0.67,
+      "recommended_qty": 6720, "recommended_qty_purchase": 6720, "order_multiple": 20, "min_order_qty": 20,
+      "value_kzt": 1070400, "urgency": "medium", "stockout_date": "2026-10-12", "order_by": "2026-09-22",
+      "reason_short": {
+        "ru": "Заказать 6 720 шт. Спрос восстановлен за 2 мес. без остатка: +1 150 шт. Исключён 1 разовый заказ на 4 580 шт.",
+        "kk": "6 720 дана тапсырыс беру ұсынылады. Қалдық болмаған 2 айдағы сұраныс қалпына келтірілді: +1 150 дана. 4 580 даналық 1 бір реттік тапсырыс есептен шығарылды."
+      },
+      "reason_codes": ["BASE_DEMAND", "STOCKOUT_RESTORED", "ONE_OFF_EXCLUDED", "SAFETY_STOCK", "STOCK_NOW", "ROUND_MULTIPLE"],
+      "flags": ["STOCKOUT_HISTORY", "ONE_OFF"], "channel_suggestion": null
+    },
+    {
+      "sku_id": "010500006_", "supplier_id": "IEK", "supplier_name": "ИЭК", "channel_id": "IEK-PP",
+      "supplier_article": "MVA20-1-016-C", "name": "ВА47-29 (1ф) 16А IEK (12/144)",
+      "group": "ВА47-29", "abc": "A", "demand_class": "smooth", "lifecycle": "active",
+      "uom_sales": "шт", "uom_purchase": "шт", "purchase_factor": 1,
+      "stock_now": 1900, "stock_is_estimate": true, "inbound_qty": 30000, "next_eta": "2026-09-30",
+      "forecast_month": 9800, "cover_months_now": 3.25,
+      "recommended_qty": 0, "recommended_qty_purchase": 0, "order_multiple": 12, "min_order_qty": 12,
+      "value_kzt": null, "urgency": "critical", "stockout_date": "2026-09-27", "order_by": "2026-09-22",
+      "reason_short": {
+        "ru": "Не заказывать: в пути 30 000 шт (УТ-8233 до 30.09, ПП УТ-7848 до 01.10). Возможен дефицит 27–29.09 — остаток оценён.",
+        "kk": "Тапсырыс қажет емес: жолда 30 000 дана (УТ-8233 30.09 дейін, ПП УТ-7848 01.10 дейін). 27–29.09 аралығында тапшылық болуы мүмкін — қалдық бағаланған."
+      },
+      "reason_codes": ["BASE_DEMAND", "INBOUND", "STOCK_ESTIMATED", "URGENT"],
+      "flags": ["STOCK_ESTIMATED"], "channel_suggestion": null
+    },
+    {
+      "sku_id": "200400085_", "supplier_id": "IEK", "supplier_name": "ИЭК", "channel_id": "IEK-RF",
+      "supplier_article": "LC1-C5E04-311", "name": "F/UTP (24 AWG), кат.5Е экран, 4 пары, серый 305м ITK",
+      "group": "ITK кабель", "abc": "A", "demand_class": "erratic", "lifecycle": "active",
+      "uom_sales": "м", "uom_purchase": "бухта", "purchase_factor": 305,
+      "stock_now": 13159, "stock_is_estimate": true, "inbound_qty": 0, "next_eta": null,
+      "forecast_month": 3900, "cover_months_now": 3.37,
+      "recommended_qty": 0, "recommended_qty_purchase": 0, "order_multiple": 1, "min_order_qty": 1,
+      "value_kzt": null, "urgency": "none", "stockout_date": "2027-01-18", "order_by": null,
+      "reason_short": {
+        "ru": "Не заказывать: запаса на 3,4 мес. при сроке поставки 38 дн. Тренд −18%/год.",
+        "kk": "Тапсырыс қажет емес: қор 3,4 айға жетеді, жеткізу мерзімі 38 күн. Тренд −18%/жыл."
+      },
+      "reason_codes": ["BASE_DEMAND", "TREND", "SAFETY_STOCK", "STOCK_NOW", "UOM_CONVERTED", "STOCK_ESTIMATED"],
+      "flags": ["STOCK_ESTIMATED"], "channel_suggestion": null
+    }
+  ]
+}

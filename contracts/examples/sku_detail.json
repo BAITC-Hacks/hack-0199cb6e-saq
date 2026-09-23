@@ -1,0 +1,61 @@
+{
+  "line": {
+    "sku_id": "300200286_", "supplier_id": "SE", "supplier_name": "Systeme Electric", "channel_id": "SE-MAIN",
+    "supplier_article": "ATN000143", "name": "S398 Роз. с з/к 16А с/у б/рамки \"ATLAS\" белый ATN143 (20)",
+    "group": "ATLAS", "abc": "A", "demand_class": "erratic", "lifecycle": "active",
+    "uom_sales": "шт", "uom_purchase": "шт", "purchase_factor": 1,
+    "stock_now": 2400, "stock_is_estimate": false, "inbound_qty": 0, "next_eta": null,
+    "forecast_month": 3600, "cover_months_now": 0.67,
+    "recommended_qty": 6720, "recommended_qty_purchase": 6720, "order_multiple": 20, "min_order_qty": 20,
+    "value_kzt": 1070400, "urgency": "medium", "stockout_date": "2026-10-12", "order_by": "2026-09-22",
+    "reason_short": { "ru": "Заказать 6 720 шт. Спрос восстановлен за 2 мес. без остатка: +1 150 шт.", "kk": "6 720 дана тапсырыс беру ұсынылады. Қалдық болмаған 2 айдағы сұраныс қалпына келтірілді: +1 150 дана." },
+    "reason_codes": ["BASE_DEMAND", "STOCKOUT_RESTORED", "ONE_OFF_EXCLUDED", "SAFETY_STOCK", "STOCK_NOW", "ROUND_MULTIPLE"],
+    "flags": ["STOCKOUT_HISTORY", "ONE_OFF"], "channel_suggestion": null
+  },
+  "series": [
+    { "month": "2026-03", "is_future": false, "sales_raw": 7820, "sales_clean": 3240, "demand_restored": 3240, "availability": 1, "stock_opening": 5200, "one_off_qty": 4580, "forecast": null, "forecast_lo": null, "forecast_hi": null },
+    { "month": "2026-04", "is_future": false, "sales_raw": 1900, "sales_clean": 1900, "demand_restored": 3310, "availability": 0.57, "stock_opening": 1500, "one_off_qty": 0, "forecast": null, "forecast_lo": null, "forecast_hi": null },
+    { "month": "2026-05", "is_future": false, "sales_raw": 0, "sales_clean": 0, "demand_restored": null, "availability": 0, "stock_opening": 0, "one_off_qty": 0, "forecast": null, "forecast_lo": null, "forecast_hi": null },
+    { "month": "2026-06", "is_future": false, "sales_raw": 3620, "sales_clean": 3620, "demand_restored": 3620, "availability": 1, "stock_opening": 0, "one_off_qty": 0, "forecast": null, "forecast_lo": null, "forecast_hi": null },
+    { "month": "2026-07", "is_future": false, "sales_raw": 3980, "sales_clean": 3980, "demand_restored": 3980, "availability": 1, "stock_opening": 6100, "one_off_qty": 0, "forecast": null, "forecast_lo": null, "forecast_hi": null },
+    { "month": "2026-08", "is_future": false, "sales_raw": 3700, "sales_clean": 3700, "demand_restored": 3700, "availability": 1, "stock_opening": 5300, "one_off_qty": 0, "forecast": null, "forecast_lo": null, "forecast_hi": null },
+    { "month": "2026-10", "is_future": true, "sales_raw": null, "sales_clean": null, "demand_restored": null, "availability": null, "stock_opening": null, "one_off_qty": 0, "forecast": 3890, "forecast_lo": 2950, "forecast_hi": 4830 },
+    { "month": "2026-11", "is_future": true, "sales_raw": null, "sales_clean": null, "demand_restored": null, "availability": null, "stock_opening": null, "one_off_qty": 0, "forecast": 3700, "forecast_lo": 2760, "forecast_hi": 4640 },
+    { "month": "2026-12", "is_future": true, "sales_raw": null, "sales_clean": null, "demand_restored": null, "availability": null, "stock_opening": null, "one_off_qty": 0, "forecast": 3200, "forecast_lo": 2260, "forecast_hi": 4140 }
+  ],
+  "projection": [
+    { "date": "2026-09-22", "stock": 2400, "arrivals": 0 },
+    { "date": "2026-10-12", "stock": -80, "arrivals": 0 },
+    { "date": "2026-11-06", "stock": -3160, "arrivals": 0 }
+  ],
+  "waterfall": [
+    { "key": "base", "label": { "ru": "Базовый спрос", "kk": "Негізгі сұраныс" }, "value": 6960 },
+    { "key": "season", "label": { "ru": "Сезонность", "kk": "Маусымдылық" }, "value": 420 },
+    { "key": "trend", "label": { "ru": "Тренд", "kk": "Тренд" }, "value": 0 },
+    { "key": "manual_growth", "label": { "ru": "План прироста", "kk": "Өсім жоспары" }, "value": 0 },
+    { "key": "safety_stock", "label": { "ru": "Страховой запас", "kk": "Сақтандыру қоры" }, "value": 1735 },
+    { "key": "stock_now", "label": { "ru": "Остаток", "kk": "Қалдық" }, "value": -2400 },
+    { "key": "inbound", "label": { "ru": "В пути", "kk": "Жолда" }, "value": 0 },
+    { "key": "floor", "label": { "ru": "Не меньше нуля", "kk": "Нөлден кем емес" }, "value": 0 },
+    { "key": "cap", "label": { "ru": "Ограничение покрытия", "kk": "Қор шегі" }, "value": 0 },
+    { "key": "rounding", "label": { "ru": "Кратность", "kk": "Еселік" }, "value": 5 },
+    { "key": "result", "label": { "ru": "Итого к заказу", "kk": "Барлығы тапсырысқа" }, "value": 6720 }
+  ],
+  "reasons": [
+    { "code": "STOCKOUT_RESTORED", "params": { "months": 2, "qty": 1150 }, "text": { "ru": "Спрос восстановлен за 2 мес. без остатка: +1 150 шт.", "kk": "Қалдық болмаған 2 айдағы сұраныс қалпына келтірілді: +1 150 дана." }, "impact_qty": 1150 },
+    { "code": "ONE_OFF_EXCLUDED", "params": { "count": 1, "qty": 4580, "max_line": 4580 }, "text": { "ru": "Исключено 1 разовых заказов на 4 580 шт (крупнейший — 4 580 шт).", "kk": "Жалпы 4 580 дана болатын 1 бір реттік тапсырыс есептен шығарылды (ең үлкені — 4 580 дана)." }, "impact_qty": -4580 }
+  ],
+  "counterfactuals": { "without_stockout_restore": 5540, "without_one_off_exclusion": 8120, "raw_average_method": 1900 },
+  "one_off_lines": [
+    { "date": "2026-03-12", "doc_key": "2026-20000024411", "qty": 4580, "cap": 96, "excess": 4484, "removed": 4484, "rule": "z>3.5 & qty>3·p95", "client_hash": null }
+  ],
+  "inbound": [],
+  "analogs": [],
+  "notes": [],
+  "params": {
+    "lead_time_days": 45, "review_days": 14, "horizon_days": 59, "service_level": 0.95, "z": 1.645,
+    "sigma_month": 780, "safety_stock": 1735, "level_month": 3540, "trend_pct_year": 0.0,
+    "season_coefs": [0.77, 0.71, 0.8, 1.02, 1.03, 1.11, 1.15, 1.16, 1.16, 1.11, 1.09, 0.88], "season_source": "group"
+  },
+  "stock": { "free": 2400, "reserved": 0, "retail": 0, "showcase": 0, "tz": 0, "rc": 0, "is_estimate": false }
+}
