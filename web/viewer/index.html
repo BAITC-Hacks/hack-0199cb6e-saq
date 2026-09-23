@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <title>Рекомендации · ЕКТ Закуп</title>
+    <link rel="stylesheet" href="/viewer.css">
+    <script src="/viewer.js" defer></script>
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="header-inner">
+        <span class="brand">ЕКТ <span aria-hidden="true">·</span> Закуп</span>
+        <span class="prototype">Прототип</span>
+        <span class="header-note">Просмотр рекомендаций</span>
+      </div>
+    </header>
+
+    <main>
+      <div class="page-heading">
+        <div>
+          <p class="eyebrow">Заказы поставщикам</p>
+          <h1>Рекомендации к заказу</h1>
+          <p class="intro">Готовые результаты расчёта с обоснованием по каждой позиции.</p>
+        </div>
+        <button id="reload" class="reload-button" type="button" disabled>
+          <span aria-hidden="true">↻</span> <span id="reload-label">Загрузка…</span>
+        </button>
+      </div>
+
+      <dl class="summary" aria-label="Сводка рекомендаций">
+        <div><dt>Всего позиций</dt><dd id="total-count">—</dd></div>
+        <div><dt>Показано</dt><dd id="visible-count">—</dd></div>
+        <div><dt>Срочных среди показанных <span class="metric-hint">critical / high</span></dt><dd id="urgent-count">—</dd></div>
+      </dl>
+
+      <section class="results" aria-label="Список рекомендаций">
+        <div class="toolbar">
+          <div class="supplier-control">
+            <label for="supplier-filter">Поставщик</label>
+            <select id="supplier-filter" disabled>
+              <option value="all">Все поставщики</option>
+              <option value="SE">SE</option>
+              <option value="IEK">ИЭК</option>
+            </select>
+          </div>
+          <p id="sort-description" class="sort-description">Сначала самые срочные</p>
+        </div>
+
+        <p id="announcement" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
+        <div id="table-region" class="table-region" role="region" aria-label="Таблица рекомендаций" aria-busy="true" tabindex="0">
+          <table>
+            <caption class="sr-only">Код товара, поставщик, рекомендуемое количество, обоснование и срочность.</caption>
+            <thead>
+              <tr>
+                <th scope="col">sku</th>
+                <th scope="col">supplier</th>
+                <th scope="col" class="quantity">qty_recommended</th>
+                <th scope="col" class="reason-heading">reason</th>
+                <th id="urgency-heading" scope="col" aria-sort="descending">
+                  <button id="sort-urgency" class="sort-button" type="button" aria-label="Срочность: сначала самые срочные. Показать сначала наименее срочные" disabled>
+                    urgency <span id="sort-arrow" aria-hidden="true">↓</span>
+                  </button>
+                </th>
+              </tr>
+            </thead>
+            <tbody id="recommendation-rows"></tbody>
+          </table>
+        </div>
+
+        <div id="state" class="state" data-kind="loading">
+          <span id="state-icon" class="state-icon" aria-hidden="true">…</span>
+          <h2 id="state-title">Загружаем рекомендации</h2>
+          <p id="state-description">Получаем результаты расчёта.</p>
+          <button id="reset-filter" class="secondary-button" type="button" hidden>Показать всех поставщиков</button>
+        </div>
+
+        <div class="table-footer">
+          <span>Срочность: critical → high → medium → low → none</span>
+          <span id="load-status">Ожидание данных</span>
+        </div>
+      </section>
+      <noscript><p class="noscript">Для загрузки рекомендаций включите JavaScript в браузере.</p></noscript>
+    </main>
+  </body>
+</html>
